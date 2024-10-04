@@ -26,8 +26,9 @@ setInterval(() => {
         console.log('Batch log summary:', logs);
         logs = []; // Clear logs after processing
     }
-}, 120000); // 2 minutes
+}, 120); // 2 minutes
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+

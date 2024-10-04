@@ -14,10 +14,10 @@ function logger(action) {
     .catch(error => console.error('Error logging event:', error));
 }
 
-button.addEventListener('click', () => logger('Button clicked')); // Corrected variable name
+button.addEventListener('click', () => logger('Button clicked'));
 
 form.addEventListener('submit', (event) => {
     event.preventDefault(); // Prevent the form from submitting normally
-    logger('Form submitted'); // Corrected variable name
+    logger('Form submitted');
     form.reset(); // Reset form after submission
 });
