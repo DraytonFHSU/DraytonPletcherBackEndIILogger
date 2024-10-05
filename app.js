@@ -14,7 +14,10 @@ function logger(action) {
     .catch(error => console.error('Error logging event:', error));
 }
 
-button.addEventListener('click', () => logger('Button clicked'));
+button.addEventListener('click', () => {
+    logger('Button clicked');
+    console.log("clicked");
+});
 
 form.addEventListener('submit', (event) => {
     event.preventDefault(); // Prevent the form from submitting normally
